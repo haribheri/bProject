@@ -1,0 +1,14 @@
+oracle user name:system
+		password:tiger
+dsn :dinu
+login page table: create table ud(name varchar2(20),pas varchar2(20))
+
+lsgp entry registration(save):create table lsgp_entry_reg(in_slno number,in_date date,in_time varchar2(20),ls_no varchar2(20),party varchar2(20),vehicle_no varchar2(20),vehicle_type varchar2(20),person_in_no number,person_ic_no number,shift_in varchar2(20),do_no varchar2(20),material varchar2(20),lc_no varchar2(20),driver varchar2(20),destination varchar2(20))
+
+block list :create table bl(vehicle_no varchar2(20))
+
+lsgp exit registration: create table lsgp_exit_registration(ls_no varchar2(20),in_slno varchar2(20),out_slno varchar2(20),in_date date,out_date date,in_time varchar2(20),out_time varchar2(20),vehicle_no varchar2(20),vehicle_type varchar2(20),do_no varchar2(20),material varchar2(20),person_in_no varchar2(20),shift_in varchar2(20),person_out_no varchar2(20),shift_out varchar2(20),person_ic_no varchar2(20),party varchar2(20),dc_no varchar2(20),out_qty varchar2(20),customer varchar2(20),destination varchar2(20),lc_no varchar2(20),driver varchar2(20),remarks varchar2(20))
+
+CISF_ENTRY_DETAILS:	create table cisf_entry_details(cisf_person_no number,cisf_person_name varchar2(20))
+
+vehicle_tracking:create table vt(vehicle_no varchar2(20),ls_no varchar2(20),in_date date,in_time varchar2(20),la_date date,ls_time varchar2(20),tare_date date,tare_time varchar2(20),yard_in_date date,yard_in_time varchar2(20),yard_out_date date,yard_out_time date,gross_time varchar2(20),dc_date date,dc_time varchar2(20),out_date date,out_time varchar2(20))
